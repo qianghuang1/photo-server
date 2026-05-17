@@ -1,0 +1,141 @@
+:root {
+  color-scheme: dark;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #111827;
+  color: #f9fafb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+button {
+  border: 0;
+  border-radius: 999px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 0.7rem 1rem;
+}
+
+button:disabled {
+  background: #4b5563;
+  cursor: not-allowed;
+}
+
+.toolbar {
+  align-items: center;
+  background: rgba(17, 24, 39, 0.92);
+  border-bottom: 1px solid #374151;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+h1 {
+  font-size: 1.25rem;
+  margin: 0 0 0.35rem;
+}
+
+.actions,
+#breadcrumbs {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+#breadcrumbs a,
+.folder {
+  color: #bfdbfe;
+  text-decoration: none;
+}
+
+main {
+  padding: 1.5rem;
+}
+
+.folders {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.folder {
+  background: #1f2937;
+  border: 1px solid #374151;
+  border-radius: 0.75rem;
+  padding: 0.8rem 1rem;
+}
+
+.gallery {
+  column-count: auto;
+  column-gap: 1rem;
+  column-width: 220px;
+}
+
+.tile {
+  background: #1f2937;
+  border: 1px solid #374151;
+  border-radius: 0.9rem;
+  break-inside: avoid;
+  margin: 0 0 1rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.tile a {
+  display: block;
+}
+
+.tile img {
+  display: block;
+  height: auto;
+  object-fit: contain;
+  width: 100%;
+}
+
+.tile label {
+  align-items: center;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.82));
+  bottom: 0;
+  display: flex;
+  gap: 0.5rem;
+  left: 0;
+  padding: 2rem 0.75rem 0.75rem;
+  position: absolute;
+  right: 0;
+}
+
+.tile input {
+  height: 1.1rem;
+  width: 1.1rem;
+}
+
+.name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.empty {
+  color: #9ca3af;
+  text-align: center;
+}
+
+@media (max-width: 720px) {
+  .toolbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

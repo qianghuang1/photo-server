@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Photo Server</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/photoswipe.css">
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <header class="toolbar">
+      <div>
+        <h1>Photo Server</h1>
+        <nav id="breadcrumbs" aria-label="Breadcrumb"></nav>
+      </div>
+      <div class="actions">
+        <button id="selectAll" type="button">Select all</button>
+        <button id="clearSelection" type="button">Clear</button>
+        <button id="downloadSelected" type="button" disabled>Download selected</button>
+      </div>
+    </header>
+
+    <main>
+      <section id="folders" class="folders" aria-label="Folders"></section>
+      <section id="gallery" class="gallery" aria-label="Photos"></section>
+      <p id="emptyState" class="empty" hidden>No photos found in this folder.</p>
+    </main>
+
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>

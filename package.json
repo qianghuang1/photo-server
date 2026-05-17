@@ -1,0 +1,27 @@
+{
+  "name": "photo-server",
+  "version": "0.1.0",
+  "description": "CLI photo browser server for reviewing and downloading images from a folder.",
+  "type": "module",
+  "bin": {
+    "photo-server": "./bin/photo-server.js"
+  },
+  "scripts": {
+    "start": "node ./bin/photo-server.js .",
+    "check": "node --check ./bin/photo-server.js && node --check ./src/server.js"
+  },
+  "keywords": [
+    "photo",
+    "gallery",
+    "server",
+    "cli"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@fastify/static": "^9.1.3",
+    "fastify": "^5.8.5",
+    "sharp": "^0.34.5",
+    "yargs": "^17.7.2"
+  },
+  "devDependencies": {}
+}
