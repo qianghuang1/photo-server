@@ -4,7 +4,11 @@
   "description": "CLI photo browser server for reviewing and downloading images from a folder.",
   "type": "module",
   "bin": {
-    "photo-server": "./bin/photo-server.js"
+    "photo-server": "bin/photo-server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qianghuang1/photo-server"
   },
   "scripts": {
     "start": "node ./bin/photo-server.js .",
